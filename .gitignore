@@ -1,0 +1,87 @@
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Python bytecode & caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Build / packaging ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Logs / debug / coverage ---
+logs/
+*.log
+coverage.xml
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# --- Jupyter / notebooks ---
+.ipynb_checkpoints/
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+
+# --- Environment / secrets ---
+.env
+.env.*
+*.env
+
+# --- RL outputs / artifacts (keep repo lean) ---
+# Trained models, checkpoints, replay buffers
+models/
+checkpoints/
+**/ckpt*/          # SB3 checkpoint callback outputs
+**/*.pth
+**/*.pt
+
+# Plots and generated images
+plots/
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.svg
+
+# Metrics runs / tensorboard
+runs/
+tb_logs/
+tensorboard/
+events.out.tfevents.*
+
+# Atari ROMs / downloads (installed by AutoROM or stored locally)
+roms/
+ROMs/
+auto_rom/
+AutoROM/
+*.bin
+
+# --- Data dumps / temp ---
+data/
+tmp/
+temp/
+*.tmp
+
+# --- VS Code Python tools cache ---
+.python_packages/
+pip-wheel-metadata/
+pip-log.txt
+
+# --- Node (if any UI tooling sneaks in) ---
+node_modules/

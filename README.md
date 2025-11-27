@@ -53,7 +53,7 @@ The agent observes:
 ## Reward Function (Improvement-Based)
 
 ```python
-reward = 10 * delta - 0.2 * time_cost - 0.5 * fatigue
+reward = 12 * delta - 0.05 * cost - 0.25 * fatigue
 ```
 
 ### Where:
@@ -93,11 +93,12 @@ python -m training.train_reinforce
 python main.py
 ```
 
-## Best Models Summary
+## Best Performing Models (Across All Hyperparameter Sweeps)
 
-| **Algorithm** | **Best Config**    | **Mean Reward** |
-|---------------|--------------------|------------------|
-| **DQN**       | `dqn_cfg_0`        | 12.11            |
-| **PPO**       | `ppo_cfg_0`        | 11.54            |
-| **A2C**       | `a2c_cfg_8`        | 10.60            |
-| **REINFORCE** | `reinforce_cfg_0`  | 8.99             |
+| Algorithm   | Best Config     | Mean Reward |
+|-------------|------------------|-------------|
+| **DQN**      | dqn_cfg_0       | **31.62**   |
+| **PPO**      | ppo_cfg_8       | **32.04**   |
+| **A2C**      | a2c_cfg_8       | **32.25**   |
+| **REINFORCE** | reinforce_cfg_2 | **30.40**   |
+

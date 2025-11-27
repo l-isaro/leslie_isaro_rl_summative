@@ -1,4 +1,3 @@
-# environment/learning_path_env.py
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
@@ -22,7 +21,7 @@ class LearningPathEnv(gym.Env):
 
         self.time_budget = time_budget
         self.alpha = 0.8
-        self.beta, self.lc, self.lf = 10.0, 0.2, 0.5
+        self.beta, self.lc, self.lf = 12.0, 0.05, 0.25
         self.spaced_bonus_step = 2
 
         # state spaces

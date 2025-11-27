@@ -46,11 +46,9 @@ coverage.xml
 
 # --- RL outputs / artifacts (keep repo lean) ---
 # Trained models, checkpoints, replay buffers
-models/
 checkpoints/
 **/ckpt*/          # SB3 checkpoint callback outputs
 **/*.pth
-**/*.pt
 
 # Plots and generated images
 plots/
